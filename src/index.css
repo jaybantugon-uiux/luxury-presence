@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --blue: #1a56db;
+  --blue-dark: #1447b5;
+  --blue-light: #2563eb;
+  --dark: #1a1a2e;
+  --dark-bg: #0f1a3d;
+  --text: #444;
+  --text-light: #666;
+  --text-muted: #888;
+  --border: #e0e0e0;
+  --bg: #fff;
+  --bg-light: #f8f9fa;
+  --card-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  --font-heading: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font: 'DM Sans', system-ui, sans-serif;
+}
+
+body {
+  font-family: var(--font);
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+  font-size: 15px;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  text-align: left;
+  border: none;
+  min-height: 100svh;
+  display: block;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  color: var(--dark);
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+  font-family: var(--font);
+}
+
+input, select, textarea {
+  font-family: var(--font);
+}
+
+/* Fix native <select> dropdown option readability on dark backgrounds */
+select option {
+  background: #1e2d5a;
+  color: #fff;
+}
+
